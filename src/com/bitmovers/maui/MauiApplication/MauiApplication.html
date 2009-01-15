@@ -1,0 +1,111 @@
+<!doctype HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+ <title>^^title^^</title>
+ <script language="JavaScript">
+  var images = new Array();
+  //images["sessionKeepAlive"] = new Image();
+  var timeoutID;
+  
+  function registerEvent(componentID)
+  {
+    if (document.mauiForm.mauiEventQueue.value == "" ||
+        document.mauiForm.toggleReset.value == "true")
+    {
+    	document.mauiForm.toggleReset.value = "";
+      document.mauiForm.mauiEventQueue.value = componentID;
+    }
+    else
+    {
+      document.mauiForm.mauiEventQueue.value = document.mauiForm.mauiEventQueue.value + "," + componentID;
+    }
+    
+    // Delay session timeout on user action.
+    //clearTimeout(timeoutID);
+    //images["sessionKeepAlive"].src = "/?randomNumber=" + timeoutID + "&getImage=true&path=/com/bitmovers/maui/components/foundation/MFrame/spacer.gif&sessionID=^^sessionID^^";
+    //startAutoSubmitTimer();
+    
+    return;
+  }
+  
+  function doSubmit ()
+  {
+  	document.mauiForm.toggleReset.value = "true";
+  	document.mauiForm.submit ();
+  	return;
+  }
+
+  function change(imagename, event)
+  {
+    document [imagename].src = images[imagename + "." + event].src;
+    return;
+  }
+  
+  function load(prefix, refname, label)
+  {
+    images[refname + ".out"] = new Image();
+    images[refname + ".out"].src = prefix + "&state=out&label=" + label;
+    //- - - - -- - - - - - - - - - - - - - - - - - - - - - - - - - -
+    images[refname + ".over"] = new Image();
+    images[refname + ".over"].src = prefix + "&state=over&label=" + label;
+    //- - - - -- - - - - - - - - - - - - - - - - - - - - - - - - - -
+    images[refname + ".down"] = new Image();
+    images[refname + ".down"].src = prefix + "&state=down&label=" + label;
+    return;
+  }
+  
+  function startAutoSubmitTimer()
+  {
+    timeoutID = setTimeout('document.mauiForm.submit()',^^refreshMilliseconds^^);
+    return;
+  }
+ </script>
+ <!-- meta http-equiv="refresh" content="^^refreshSeconds^^;url=^^applicationName^^" -->  
+ <style type="text/css">
+  BODY
+  {
+    font-family:   Verdana, Helvetica, Arial, Sans-Serif;
+  }
+
+  TD
+  {
+    font-family:   Verdana, Helvetica, Arial, Sans-Serif;
+    font-size:     11px;
+  }
+
+  A:hover
+  {
+    color: #336666;
+  }
+
+  .titlebar
+  {
+    font-family: Verdana, Helvetica, Arial, Sans-Serif;
+    font-size: 12px;
+  }
+ </style>
+</head>
+<body bgcolor="^^backgroundColor^^" text="^^textColor^^" link="^^linkColor^^" vlink="^^vlinkColor^^" alink="^^alinkColor^^" leftmargin="0" rightmargin="0" topmargin="0" bottommargin="0" marginwidth="0" marginheight="0" onLoad="startAutoSubmitTimer();^^onLoad^^" onUnload="clearTimeout(timeoutID);" ^^background^^>
+
+^^desktopPreamble^^
+
+^^applicationPreamble^^
+
+<form method="post" action="^^applicationName^^" name="mauiForm">
+<input type="hidden" name="toggleReset" value="">
+<input type="hidden" name="sessionID" value="^^sessionID^^">
+<input type="hidden" name="mauiEventQueue" value="">
+<input type="hidden" name="emptyIsSignificant" value="true">
+<input type="hidden" name="sequenceNumber" value="^^sequenceNumber^^">
+<br>
+
+^^layoutManager^^
+
+^^applicationPostamble^^
+
+^^desktopPostamble^^
+
+</form>
+
+</body>
+</html>

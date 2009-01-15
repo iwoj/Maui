@@ -1,0 +1,27 @@
+BODY
+{
+  font-family:   Verdana, Helvetica, Arial, Sans-Serif;
+}
+
+TD
+{
+  font-family:   Verdana, Helvetica, Arial, Sans-Serif;
+  font-size:     11px;
+}
+
+P
+{
+  font-family:   Verdana, Helvetica, Arial, Sans-Serif;
+  font-size:     11px;
+}
+
+A:hover
+{
+  color: #336666;
+}
+
+.titlebar
+{
+  font-family: Verdana, Helvetica, Arial, Sans-Serif;
+  font-size: 12px;
+}

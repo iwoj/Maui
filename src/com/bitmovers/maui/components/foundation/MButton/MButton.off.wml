@@ -1,0 +1,6 @@
+<!-- BUTTON WML -->
+<anchor id="^^safeComponentID^^">
+	<go href="^^servletURL^^?MauiEvent;com.bitmovers.maui.component.foundation.Button;^^componentID^^=pushButton">
+	</go>
+</anchor>
+<!-- end BUTTON WML -->

@@ -1,0 +1,3 @@
+<!-- start TextField WML (mike test) -->
+<input name="^^safeComponentID^^" value="^^value^^" ^^maximumLength^^ type="^^type^^"/>
+<!-- end TextField WML -->

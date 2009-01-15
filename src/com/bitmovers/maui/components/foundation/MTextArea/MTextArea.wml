@@ -1,0 +1,3 @@
+<!-- start TextArea WML -->
+<input name="^^safeComponentID^^" value="^^value^^" type="^^type^^" emptyok="true"/>
+<!-- end TextArea WML -->
