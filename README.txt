@@ -68,9 +68,9 @@ To run Maui on a Mac, just double-click the Maui application.
 
 On Linux, run the following:
 
-  java -jar Libraries/Maui.jar
+  java -jar Maui.jar
 
 On Windows:
 
-  java.exe -jar Libraries\Maui.jar
+  java.exe -jar Maui.jar
 

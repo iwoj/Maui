@@ -51,4 +51,4 @@ public class MFrame_wml extends A_Renderer
 	private MauiApplication mauiApplication = null;
 	private HTTPSession session = null;
 	private HasPostValue [] valuePosters = null;
-	
+}
