@@ -298,7 +298,6 @@ public class HTTPResponse
 			}
 			/*aOutputStream.write (mauiVersion);
 			aOutputStream.write (CONTENTTYPE_TEXT);
-
 			aOutputStream.write (CONTENT_LENGTH);
 			aOutputStream.write (getBytesLocal (Integer.toString (theErrorMessage.length)));
 			aOutputStream.write (CRLF);

@@ -149,8 +149,8 @@ public class HTTPSecureServer extends HTTPServer
 		try
 		{
 			String theCertFile = theSCM.getProperty (theSCM.MAUI_CERTIFICATE_FILE);
-			SSLContext theContext = SSLContext.getInstance ("TLS");
-			KeyManagerFactory theKMF = KeyManagerFactory.getInstance ("SunX509");
+			javax.net.ssl.SSLContext theContext = javax.net.ssl.SSLContext.getInstance ("TLS");
+			javax.net.ssl.KeyManagerFactory theKMF = javax.net.ssl.KeyManagerFactory.getInstance ("SunX509");
 			KeyStore theKS = KeyStore.getInstance (KeyStore.getDefaultType ());
 			theKS.load (getCertificateStream (theCertFile), null);
 			theKMF.init (theKS, thePassphrase);

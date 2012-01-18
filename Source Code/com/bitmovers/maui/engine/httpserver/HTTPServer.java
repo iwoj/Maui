@@ -52,7 +52,7 @@ public class HTTPServer
 	
 	protected String realClassName = "HTTPServer";
 	
-	private Queue connectionQueue = new Queue ();
+	private com.bitmovers.maui.engine.Queue connectionQueue = new com.bitmovers.maui.engine.Queue ();
 	
 	private static boolean globalInitDone = false;
 	
@@ -298,4 +298,4 @@ public class HTTPServer
 
 
 // =============================================================================
-// Copyright © 2000 Bitmovers Software Inc.                                  eof
+// Copyright Â© 2000 Bitmovers Software Inc.                                  eof

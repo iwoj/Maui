@@ -182,7 +182,6 @@ public abstract class A_Renderer implements I_Renderer
 		
 		//
 		// Iterate through template types (e.g. "off", "selected", "")
-
 		//
 		TEMPLATE_TYPE_LOOP: for (int i = 0; i < theTemplateTypes.length; i++)
 		{
@@ -465,7 +464,6 @@ public abstract class A_Renderer implements I_Renderer
 		HashMap theComponentPhase = (HashMap) aPhaseMap.get (aPhaseClass);
 		if (theComponentPhase != null)
 		{
-
 			Object [] theComponents = theComponentPhase.values ().toArray ();
 			retVal = new MComponent [theComponents.length];
 			for (int i = 0; i < retVal.length; i++)
@@ -1369,7 +1367,6 @@ public abstract class A_Renderer implements I_Renderer
 	  * @return            Boolean indicating if phase generation should be 
 	  *                    done for this component.
 	  * 
-
 	  */
 	  
 	public boolean generatePhaseOkay(I_Renderable aRenderable, String aPhase)

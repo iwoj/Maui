@@ -223,7 +223,6 @@ public class CacheManager extends CacheEventSource implements I_CacheManager
 	*
 	* @param aFactorname The name of the load factor
 	* @param aValue The object representing the new value
-
 	*/
 	public void adjustLoadFactor (String aName, Object aValue)
 	{

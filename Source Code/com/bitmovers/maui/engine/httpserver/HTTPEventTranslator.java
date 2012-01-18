@@ -479,7 +479,6 @@ public class HTTPEventTranslator
 	  
 	private void translateAndDispatchEvents(HTTPRequest request)
 	{
-
 		Vector queue = new Vector();
 		Vector theMultipleEvents = new Vector ();
 		boolean theAllowDuplicateEvents = true;
@@ -561,7 +560,6 @@ public class HTTPEventTranslator
 								{
 									theSequenceNumber = -2;
 								}
-
                 				
 							}
 						}

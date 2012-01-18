@@ -60,7 +60,7 @@ public class HTTPConnection
 	
 	private static int connectionCount = 0;
 	
-	private static Queue connectionQueue = new Queue ();
+	private static com.bitmovers.maui.engine.Queue connectionQueue = new com.bitmovers.maui.engine.Queue ();
 	private static int minimum;
 	
 	private boolean isConnectionClosed = false;
@@ -121,7 +121,6 @@ public class HTTPConnection
 			threadPooling = theSCM.getProperty (theSCM.MAUI_THREAD_POOLING).equalsIgnoreCase ("true");
 			int theValue;
 			try
-
 			{
 				theValue = Integer.parseInt (theSCM.getProperty (theSCM.MAUI_CONNECTION_BUFFER_SIZE));
 			}
@@ -1299,4 +1298,4 @@ class MyBufferedInputStream extends FilterInputStream {
 
 
 // ========================================================================
-// Copyright © 2001 Bitmovers Software Inc.                             eof
+// Copyright Â© 2001 Bitmovers Software Inc.                             eof

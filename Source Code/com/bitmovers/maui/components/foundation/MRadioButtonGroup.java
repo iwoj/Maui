@@ -436,7 +436,6 @@ public class MRadioButtonGroup extends MComponent
 	  
 	public String getPostValue ()
 	{
-
 	  	return "$(IDz" + getComponentID () + ")";//":e)";
 	}
 

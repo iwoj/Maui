@@ -1,0 +1,19 @@
+<!-- start BorderLayout for WML -->
+<table columns="3" align="C">
+ <tr>
+  <td></td>
+  <td>^^north^^</td>
+  <td></td>
+ </tr>
+ <tr>
+  <td>^^west^^</td>
+  <td>^^center^^</td>
+  <td>^^east^^</td>
+ </tr>
+ <tr>
+  <td></td>
+  <td>^^south^^</td>
+  <td></td>
+ </tr>
+</table>
+<!-- end BorderLayout for WML -->

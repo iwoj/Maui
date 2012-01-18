@@ -507,7 +507,6 @@ public abstract class MauiApplication extends MContainer
 	public void setBackgroundColor(String aColor)
 	{
 		backgroundColor = aColor;
-
 	}
 	
   
@@ -557,7 +556,6 @@ public abstract class MauiApplication extends MContainer
 	  */
 	  
 	public String getBackgroundImage ()
-
 	{
 		return backgroundImage;
 	}
@@ -726,7 +724,6 @@ public abstract class MauiApplication extends MContainer
   
 	// ----------------------------------------------------------------------
 	// METHOD: setFolderName
-
 	// ----------------------------------------------------------------------
 	
   /** Sets the application folder name.

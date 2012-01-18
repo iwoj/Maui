@@ -148,7 +148,6 @@ public abstract class A_MessageThread extends Thread
 	* @invisible
 	*/
 	public synchronized void handleMessage (Object aMessage)
-
 	{
 		touch ();
 		handlingMessage = true;
