@@ -32,7 +32,7 @@ public class AuthorizationManager
 	public static final boolean VALUE_SERVLET = false;
 	public static final int VALUE_SESSIONS = 5;
 	public static final boolean VALUE_CLIENTBRANDING = false;
-	public static final boolean VALUE_BITMOVERSBRANDING = false;
+	public static final boolean VALUE_BITMOVERSBRANDING = true;
 	
 	public static final boolean LICENSE_SERVLET = true;
 	public static final int LICENSE_SESSIONS = -1;

@@ -193,7 +193,6 @@ public class HTTPSession
 	public static void removeSessionListener (I_SessionListener aSessionListener)
 	{
 		if (sessionListeners.contains (aSessionListener))
-
 		{
 			sessionListeners.remove (aSessionListener);
 			rebuildSessionListeners = true;

@@ -326,7 +326,6 @@ public class MTabbedPane extends MContainer
 		{
 			getTabbedComponent (aIndex).setEnabled (aEnabled);
 		}
-
 	}
 	
 	
