@@ -1,9 +1,4 @@
-This source was owned by a company that went belly-up in 2001. As one of the ex-employees, shareholders and authors of this code, I am releasing it into the public domain under the MIT opensource license.
-
-- Ian Wojtowicz
-  January 8th, 2009
-
-
+Maui is an API for developing event-driven, object-oriented APIs.
 
 
 INSTALLATION
