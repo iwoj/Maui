@@ -1,6 +1,19 @@
-Maui is an API for developing event-driven, object-oriented user interfaces. Applications are written in a manner similar to the Java Swing API, and are maintained in memory on the server-side. The HTTP request/response protocol are abstracted away from the application developer, as is all of the client rendering (HTML, Javascript, etc.).
+Maui is an API for event-driven, object-oriented web applications. Apps are written just like Java Swing applications, and are maintained statefully in memory on the server-side. The HTTP request/response protocol is abstracted away from the application developer, as is all of the client rendering (HTML, Javascript, etc.). So you get code like this:
 
-One benefit of this approach, is that Maui will render different outputs for different browsers, handling differences between them gracefully. Maui apps currently deploy to the following platforms:
+MApplication app = new MApplication();
+MLabel output = new MLabel();
+MButton helloButton = new MButton("Say Hello");
+app.add(output);
+app.add(helloButton);
+helloButton.addActionListener(new MActionListener() {
+	public void actionPerformed(MActionEvent event) {
+		output.setText("Hello World!");
+	}
+});
+
+One benefit of this approach, is that Maui also renders different output for different browsers, handling differences between them gracefully and freeing the developer to focus on the application instead of fixing annoying browser rendering quirks.
+
+Maui apps currently deploy to the following platforms:
 
 Windows
 - Microsoft Internet Explorer 6.0
