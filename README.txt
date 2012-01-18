@@ -64,13 +64,13 @@ Blackberry
 
 INSTALLATION
 ------------
-To run Maui on a Mac, just double-click the Maui.jar file.
+To run Maui on a Mac, just double-click the Maui application.
 
 On Linux, run the following:
 
-  java -jar Maui.jar
+  java -jar Libraries/Maui.jar
 
 On Windows:
 
-  java.exe -jar Maui.jar
+  java.exe -jar Libraries\Maui.jar
 
